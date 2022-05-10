@@ -288,6 +288,65 @@
                       Padding="5,-2,5,10"
                       VerticalAlignment="Center"
                       Margin="180,0,0,0">Manufacturer Driver Pack (Dell, HP, Lenovo, Surface)</CheckBox>
+                <CheckBox Name="SpecificManufacturerDriverCheckbox"
+                      BorderBrush="Black"
+                      BorderThickness="2"
+                      FontSize="15"
+                      Foreground="Black"
+                      IsChecked="True"
+                      Padding="5,-2,5,10"
+                      VerticalAlignment="Center"
+                      Margin="180,0,0,0">Specify Manufacturer Driver Pack</CheckBox>
+                 <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="5,-5,5,0">
+                        <Label Name="SystemDriversDetailsLabel"
+                               Content=""
+                               FontSize="18"
+                               FontWeight="Bold"
+                               Foreground="#003E92"
+                               Margin="5"
+                               Padding="2"
+                               Width="160" />
+                        <Label Name="SelectedDriverLabel"
+                             FontSize="16"
+                             FontWeight="Bold"
+                             Margin="5"
+                             Padding="2"
+                             Content="Selected Driver:" />
+                        <ComboBox Name="DellDriversOSCheckbox"
+                                  FontSize="16"
+                                  Margin="5"
+                                  Padding="2"
+                                  SelectedIndex="0" >
+                                  <ComboBoxItem Content="T5810-win10-A05-774GJ.CAB"/>
+                                  <ComboBoxItem Content="Dell Win11"/>
+                        </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="5,-5,5,0">
+                    <Label Name="DriverDetailsLabel"
+                           Content=""
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Foreground="#003E92"
+                           Margin="5"
+                           Padding="2"
+                           Width="160"
+                           FlowDirection="RightToLeft" />
+                    <Label Name="DriverDateLabel"
+                             FontSize="16"
+                             FontWeight="Bold"
+                             Margin="5"
+                             Padding="2"
+                             Content="Driver Date:" />
+                    <TextBox Name="DriverDateTextbox"
+                             FontSize="16"
+                             Margin="5"
+                             Padding="2"
+                             Text="3/27/2018 12:00:00 AM" />
+                </StackPanel>
                 <CheckBox Name="CatalogDriversCheckbox"
                       BorderBrush="Black"
                       BorderThickness="2"
